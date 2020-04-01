@@ -124,13 +124,14 @@
             }
         }
 
-        .brand {
-            padding: .75rem;
-            font-size: .5rem;
-            text-align: right;
-        }
-
         .content {
+            padding-bottom: .75rem;
+
+            .brand {
+                padding: 0 .75rem;
+                font-size: .5rem;
+                text-align: right;
+            }
 
             .subtitle {
                 padding: 0 .75rem;

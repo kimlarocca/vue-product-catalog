@@ -20,6 +20,7 @@
                 numberOfPages: 0,
                 currentPage: 1,
                 sorting: [],
+                sortBy: 'titleasc',
                 layout: this.defaultLayout
             }
         },
@@ -48,9 +49,6 @@
                 // sort items
                 this.sortItems(filteredItems)
                 return filteredItems
-            },
-            sortBy () {
-                return this.defaultSortBy
             }
         },
         methods: {
@@ -72,10 +70,10 @@
                 }
             }
         },
-        watch: {
-            refinements () {
-                console.log('refinements updated')
-            }
-        }
+        // watch: {
+        //     refinements () {
+        //         console.log('refinements updated')
+        //     }
+        // }
     }
 </script>
