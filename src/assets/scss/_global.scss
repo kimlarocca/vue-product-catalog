@@ -1,3 +1,12 @@
+// took this from https://www.byramhealthcare.com/Styles/dist/main.css
+// testing for style conflicts
+// you should delete these for prod
+@import "byram";
+@import "MyFontsWebfontsKit";
+//
+//
+//
+
 // global variables
 
 $transition: 500ms all linear;
@@ -5,6 +14,7 @@ $opacity-on-hover: .75;
 $font-color: #2b2c2f;
 $link-color: #001e61;
 $light-gray: #cdcdcd;
+$green: #82bc00;
 $font-awesome: 'Font Awesome 5 Free', sans-serif;
 
 // vue transitions
@@ -52,4 +62,16 @@ $font-awesome: 'Font Awesome 5 Free', sans-serif;
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+// misc
+
+@import "carousel";
+
+.section-padding-60 {
+  margin-bottom: 60px;
+}
+
+.section-padding-40 {
+  margin-bottom: 40px;
 }

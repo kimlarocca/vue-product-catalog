@@ -20,7 +20,7 @@
                 numberOfPages: 0,
                 currentPage: 1,
                 sorting: [],
-                sortBy: 'titleasc',
+                sortBy: this.defaultSortBy,
                 layout: this.defaultLayout
             }
         },
@@ -38,7 +38,7 @@
                 ))
         },
         computed: {
-            filteredItems () {
+            filteredItems: function () {
                 let filteredItems = this.items
                 // keyword search
                 if (this.keyword) {

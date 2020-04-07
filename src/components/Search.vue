@@ -14,6 +14,16 @@
                 keyword: null
             }
         },
+        mounted () {
+            //check for query parameter for keyword search
+            let uri = window.location.search.substring(1)
+            let params = new URLSearchParams(uri)
+            let query = params.get("query")
+            if (query !== null) {
+                this.keyword = query
+                this.$parent.keyword = this.keyword
+            }
+        },
         watch: {
             keyword () {
                 this.$parent.keyword = this.keyword
@@ -22,7 +32,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .hawksearch-search {
         position: relative;
 

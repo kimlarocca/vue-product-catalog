@@ -1,5 +1,17 @@
 <template>
     <div class="hawksearch-refinements">
+        <div class="refinements-applied">
+            <template v-if="this.$parent.refinements.length === 0">No filters applied.</template>
+            <ul v-else>
+                <li v-for="(refinement, index) in this.$parent.refinements"
+                    :key="index"
+                    @click="removeRefinement(refinement)"
+                >
+                    {{refinement.value}}
+                </li>
+            </ul>
+        </div>
+        <div class="refine-by">Refine By:</div>
         <template v-for="(refinement, index) in this.$parent.facets">
             <refinement-item
                     v-if="refinement.Values.length > 0"
@@ -24,12 +36,44 @@
             RefinementItem
         },
         methods: {
-            toggleRefinement(paramName, value){
-                // let newRefinement = {"paramName": paramName, "value": value}
-                let newRefinement = value
-                this.$parent.refinements.push(newRefinement)
+            addRefinement (paramName, value) {
+                this.$parent.refinements.push({"paramName": paramName, "value": value})
+            },
+            removeRefinement (refinement) {
+                this.$parent.refinements = this.$parent.refinements.filter((x) => x != refinement)
             }
-
         }
     }
 </script>
+
+<style lang="scss" scoped>
+    .refinements-applied {
+        font-size: .75rem;
+        color: $link-color;
+        margin-bottom: 1rem;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin: 0 .5rem .5rem 0;
+                cursor: pointer;
+
+                &:before {
+                    content: 'X';
+                    color: $font-color;
+                    margin-right: 1px;
+                }
+            }
+        }
+    }
+
+    .refine-by {
+        font-family: 'FFDINStdBold', serif;
+        font-size: .875rem;
+        margin-bottom: .25rem;
+    }
+</style>

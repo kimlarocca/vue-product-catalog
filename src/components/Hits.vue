@@ -9,9 +9,13 @@
                         :image="item.ImageURL"
                         :altText="item.ImageAlt"
                         :brand="item.Brand"
+                        preTitle="Bard Medical Division"
                         :title="item.ItemName"
                         :link="item.CustomURL"
-                        :subtitle="item.ItemName"
+                        itemNumber="CT33120"
+                        size="8 x 8"
+                        unitOfMeasure="Box of 5"
+                        cta="view product information"
                         :layout="layoutName"
                 >
                 </card>

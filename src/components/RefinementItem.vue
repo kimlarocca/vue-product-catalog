@@ -56,7 +56,7 @@
         },
         methods: {
             toggleRefinement (paramName, value) {
-                this.$parent.toggleRefinement(paramName, value);
+                this.$parent.addRefinement(paramName, value);
             },
             showMore () {
                 this.numberToShow = 10000
@@ -66,9 +66,9 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .refinement-item-name {
-        font-weight: bold;
+        font-family: 'FFDINStdBold', serif;
         font-size: .75rem;
         color: $link-color;
         cursor: pointer;

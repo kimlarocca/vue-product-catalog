@@ -31,7 +31,7 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .hawksearch-layout-options {
         height: 2rem;
 

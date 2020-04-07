@@ -1,0 +1,58 @@
+[
+  {
+    "ItemName": "Men's Tamarack B Dry",
+    "ImageURL": "https://test.hawksearch.net/assets/1/14/DimThumbnail/Oboz-Tamarack-BDry-Bungee.jpg",
+    "ImageAlt": "Oboz-Tamarack-BDry-Bungee",
+    "Id": "Item_150648",
+    "CustomURL": "https://demo.hawksearch.com/details.aspx?itemid=Item_150648",
+    "Brand": "Oboz"
+  },
+  {
+    "ItemName": "Girls Benton Springs Fleece / Little Kids / Toddler",
+    "ImageURL": "https://test.hawksearch.net/assets/1/14/DimThumbnail/GIRLS-BENTON-SPRINGS-II-FLEECE---TODDLER-Haute-Pink.jpg",
+    "ImageAlt": "GIRLS-BENTON-SPRINGS-II-FLEECE---TODDLER-Haute-Pink",
+    "Id": "Item_72282",
+    "CustomURL": "https://demo.hawksearch.com/details.aspx?itemid=Item_72282",
+    "Brand": "Columbia Sportswear"
+  },
+  {
+    "ItemName": "Paddle Float",
+    "ImageURL": "https://test.hawksearch.net/assets/1/14/DimThumbnail/{F89312C4-33A5-4E45-97EA-4D067FFBE51A}.jpg",
+    "ImageAlt": "5873",
+    "Id": "Item_72311",
+    "CustomURL": "https://demo.hawksearch.com/details.aspx?itemid=Item_72311",
+    "Brand": "SealLine"
+  },
+  {
+    "ItemName": "Men's Tamarack B Dry",
+    "ImageURL": "https://test.hawksearch.net/assets/1/14/DimThumbnail/Oboz-Tamarack-BDry-Bungee.jpg",
+    "ImageAlt": "Oboz-Tamarack-BDry-Bungee",
+    "Id": "Item_150648",
+    "CustomURL": "https://demo.hawksearch.com/details.aspx?itemid=Item_150648",
+    "Brand": "Oboz"
+  },
+  {
+    "ItemName": "Girls Benton Springs Fleece / Little Kids / Toddler",
+    "ImageURL": "https://test.hawksearch.net/assets/1/14/DimThumbnail/GIRLS-BENTON-SPRINGS-II-FLEECE---TODDLER-Haute-Pink.jpg",
+    "ImageAlt": "GIRLS-BENTON-SPRINGS-II-FLEECE---TODDLER-Haute-Pink",
+    "Id": "Item_72282",
+    "CustomURL": "https://demo.hawksearch.com/details.aspx?itemid=Item_72282",
+    "Brand": "Columbia Sportswear"
+  },
+  {
+    "ItemName": "Paddle Float",
+    "ImageURL": "https://test.hawksearch.net/assets/1/14/DimThumbnail/{F89312C4-33A5-4E45-97EA-4D067FFBE51A}.jpg",
+    "ImageAlt": "5873",
+    "Id": "Item_72311",
+    "CustomURL": "https://demo.hawksearch.com/details.aspx?itemid=Item_72311",
+    "Brand": "SealLine"
+  },
+  {
+    "ItemName": "Girls Benton Springs Fleece / Little Kids / Toddler",
+    "ImageURL": "https://test.hawksearch.net/assets/1/14/DimThumbnail/GIRLS-BENTON-SPRINGS-II-FLEECE---TODDLER-Haute-Pink.jpg",
+    "ImageAlt": "GIRLS-BENTON-SPRINGS-II-FLEECE---TODDLER-Haute-Pink",
+    "Id": "Item_72282",
+    "CustomURL": "https://demo.hawksearch.com/details.aspx?itemid=Item_72282",
+    "Brand": "Columbia Sportswear"
+  }
+]

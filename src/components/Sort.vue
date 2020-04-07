@@ -25,12 +25,12 @@
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .hawksearch-sort {
         label {
-            line-height: 2rem;
+            line-height: 1rem;
             color: $link-color;
-            font-size: .75rem;
+            font-size: .875rem;
             margin: 0 .5rem 0 0;
         }
 
