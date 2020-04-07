@@ -1,0 +1,55 @@
+$arrow-color: $link-color;
+$arrow-hover-color: $font-color;
+
+.VueCarousel {
+
+  .VueCarousel-navigation {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .VueCarousel-navigation-button {
+    position: absolute;
+    font-size: 1.25rem;
+    height: 4rem;
+    font-family: Times, sans-serif;
+    opacity: 1;
+    color: $arrow-color;
+
+    &:hover {
+      color: $arrow-hover-color;
+    }
+  }
+
+  .VueCarousel-navigation--disabled {
+    opacity: .5;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  .VueCarousel-navigation-prev {
+    left: .25rem;
+
+    &:after {
+      content: '\f0a8';
+      font-family: $font-awesome;
+      font-weight: 900;
+    }
+  }
+
+  .VueCarousel-navigation-next {
+    right: .25rem;
+
+    &:after {
+      content: '\f0a9';
+      font-family: $font-awesome;
+      font-weight: 900;
+    }
+  }
+}
