@@ -1,4 +1,9 @@
-# hawksearch
+# hawksearch component library
+
+* Global variables are defined in src/main.js
+* Uses Vue Carousel: https://ssense.github.io/vue-carousel/
+* Set the public path of the app in vue.config.js
+* Set routes in src/router/index.js
 
 ## Project setup
 ```
@@ -13,21 +18,6 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
 ```
 
 ### Customize configuration

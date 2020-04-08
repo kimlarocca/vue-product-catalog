@@ -15,7 +15,7 @@
             }
         },
         mounted () {
-            //check for query parameter for keyword search
+            //check for query parameter
             let uri = window.location.search.substring(1)
             let params = new URLSearchParams(uri)
             let query = params.get("query")
@@ -26,7 +26,12 @@
         },
         watch: {
             keyword () {
-                this.$parent.keyword = this.keyword
+                // if keyword exists, filter items based on keyword
+                if (this.keyword) {
+                    this.$parent.filteredItems = this.$parent.filteredItems.filter((item) => {
+                        return item.ItemName.toLowerCase().includes(this.keyword.toLowerCase())
+                    })
+                }
             }
         }
     }

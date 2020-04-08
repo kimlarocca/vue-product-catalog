@@ -20,6 +20,7 @@
         watch: {
             selected () {
                 this.$parent.sortBy = this.selected
+                this.$parent.sortItems()
             }
         }
     }

@@ -38,9 +38,12 @@
         methods: {
             addRefinement (paramName, value) {
                 this.$parent.refinements.push({"paramName": paramName, "value": value})
+                this.$parent.filterByRefinements()
             },
             removeRefinement (refinement) {
+                // need to add code to uncheck the checkbox
                 this.$parent.refinements = this.$parent.refinements.filter((x) => x != refinement)
+                this.$parent.filterByRefinements()
             }
         }
     }

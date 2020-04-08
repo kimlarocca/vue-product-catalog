@@ -12,6 +12,7 @@
         data () {
             return {
                 items: [],
+                filteredItems: [],
                 facets: [],
                 keyword: null,
                 refinements: [],
@@ -37,43 +38,35 @@
                         this.numberOfPages = response.data.Pagination.NofPages
                 ))
         },
-        computed: {
-            filteredItems: function () {
-                let filteredItems = this.items
-                // keyword search
-                if (this.keyword) {
-                    filteredItems = filteredItems.filter((item) => {
-                        return item.ItemName.toLowerCase().includes(this.keyword.toLowerCase())
-                    })
-                }
-                // sort items
-                this.sortItems(filteredItems)
-                return filteredItems
-            }
-        },
         methods: {
-            sortItems (arr) {
+            sortItems () {
                 if (this.sortBy === 'score') {
-                    arr.sort((a, b) => (a.score > b.score) ? 1 : -1)
+                    this.filteredItems.sort((a, b) => (a.score > b.score) ? 1 : -1)
                 }
                 if (this.sortBy === 'salepriceasc') {
-                    arr.sort((a, b) => (a.Custom.price > b.Custom.price) ? 1 : -1)
+                    this.filteredItems.sort((a, b) => (a.Custom.price > b.Custom.price) ? 1 : -1)
                 }
                 if (this.sortBy === 'salepricedesc') {
-                    arr.sort((a, b) => (a.Custom.price > b.Custom.price) ? 1 : -1).reverse()
+                    this.filteredItems.sort((a, b) => (a.Custom.price > b.Custom.price) ? 1 : -1).reverse()
                 }
                 if (this.sortBy === 'titleasc') {
-                    arr.sort((a, b) => (a.ItemName > b.ItemName) ? 1 : -1)
+                    this.filteredItems.sort((a, b) => (a.ItemName > b.ItemName) ? 1 : -1)
                 }
                 if (this.sortBy === 'titledesc') {
-                    arr.sort((a, b) => (a.ItemName > b.ItemName) ? 1 : -1).reverse()
+                    this.filteredItems.sort((a, b) => (a.ItemName > b.ItemName) ? 1 : -1).reverse()
                 }
+            },
+            filterByRefinements () {
+                this.filteredItems = []
+                if(this.refinements.length === 0) this.filteredItems = this.items
+                // for (var i = 0; i <= this.refinements.length; i++) {
+                //     if(this.refinements[i] !== undefined) {
+                //         // need to add code that filters the array by the refinement
+                //         console.log(this.refinements[i])
+                //     }
+                // }
+                this.sortItems()
             }
-        },
-        // watch: {
-        //     refinements () {
-        //         console.log('refinements updated')
-        //     }
-        // }
+        }
     }
 </script>
