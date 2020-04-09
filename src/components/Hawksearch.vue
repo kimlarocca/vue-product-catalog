@@ -11,8 +11,8 @@
         name: 'Hawksearch',
         data () {
             return {
+                originalItems: [],
                 items: [],
-                filteredItems: [],
                 facets: [],
                 keyword: null,
                 refinements: [],
@@ -29,7 +29,8 @@
             axios
                 .get(this.api)
                 .then(response => (
-                    this.items = response.data.Results,
+                    this.originalItems = response.data.Results,
+                        this.items = response.data.Results,
                         this.filteredItems = response.data.Results,
                         this.facets = response.data.Facets,
                         this.sorting = response.data.Sorting.Items,
@@ -37,6 +38,17 @@
                         this.maxPerPage = response.data.Pagination.MaxPerPage,
                         this.numberOfPages = response.data.Pagination.NofPages
                 ))
+        },
+        computed: {
+            filteredItems () {
+                if (this.keyword) {
+                    return this.items.filter(item => {
+                        return item.ItemName.toLowerCase().includes(this.keyword.toLowerCase());
+                    })
+                } else {
+                    return this.items;
+                }
+            }
         },
         methods: {
             sortItems () {
@@ -55,17 +67,32 @@
                 if (this.sortBy === 'titledesc') {
                     this.filteredItems.sort((a, b) => (a.ItemName > b.ItemName) ? 1 : -1).reverse()
                 }
-            },
-            filterByRefinements () {
-                this.filteredItems = []
-                if(this.refinements.length === 0) this.filteredItems = this.items
-                // for (var i = 0; i <= this.refinements.length; i++) {
-                //     if(this.refinements[i] !== undefined) {
-                //         // need to add code that filters the array by the refinement
-                //         console.log(this.refinements[i])
-                //     }
-                // }
-                this.sortItems()
+            }
+        },
+        watch: {
+            refinements () {
+                if (this.refinements.length > 0) {
+                    this.items = []
+                    // loop through refinements array
+                    for (let i = 0; i < this.refinements.length; i++) {
+                        let key = this.refinements[i].paramName
+                        let value = this.refinements[i].value
+                        // loop through items array
+                        for (let j = 0; j < this.originalItems.length; j++) {
+                            let customObject = this.originalItems[j].Custom
+                            if (customObject !== undefined) {
+                                // eslint-disable-next-line no-prototype-builtins
+                                if (customObject.hasOwnProperty(key) && customObject[key] === value) {
+                                    this.items.push(this.originalItems[j])
+                                }
+                            }
+                        }
+                    }
+                    // get rid of duplicates
+                    this.items = [...new Set(this.items)]
+                } else {
+                    this.items = this.originalItems
+                }
             }
         }
     }

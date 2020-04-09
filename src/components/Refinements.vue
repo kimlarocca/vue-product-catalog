@@ -5,7 +5,7 @@
             <ul v-else>
                 <li v-for="(refinement, index) in this.$parent.refinements"
                     :key="index"
-                    @click="removeRefinement(refinement)"
+                    @click="removeRefinementByObject(refinement)"
                 >
                     {{refinement.value}}
                 </li>
@@ -19,6 +19,7 @@
                     class="refinement-item"
                     :name="refinement.Name"
                     :paramName="refinement.ParamName"
+                    :refinementObject="refinement"
                     :values="refinement.Values"
                     :isCollapsed="refinement.IsCollapsedDefault"
                     :numberVisible="refinement.NofVisible"
@@ -37,13 +38,18 @@
         },
         methods: {
             addRefinement (paramName, value) {
+                // add refinement to refinements array
                 this.$parent.refinements.push({"paramName": paramName, "value": value})
-                this.$parent.filterByRefinements()
             },
-            removeRefinement (refinement) {
-                // need to add code to uncheck the checkbox
+            removeRefinement (paramName, value) {
+                // remove refinement from refinements array
+                this.$parent.refinements = this.$parent.refinements.filter((x) => (x.value != value && x.paramName != paramName))
+            },
+            removeRefinementByObject (refinement) {
+                // remove refinement from refinements array
                 this.$parent.refinements = this.$parent.refinements.filter((x) => x != refinement)
-                this.$parent.filterByRefinements()
+                // uncheck the refinement's checkbox
+                document.querySelectorAll("input[type='checkbox'][value=" + refinement.value + "]")[0].checked = false;
             }
         }
     }

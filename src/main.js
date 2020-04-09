@@ -18,9 +18,10 @@ Vue.prototype.numberOfRefinementsVisible = 5
 Vue.prototype.defaultSortBy = 'titleasc'
 
 // set the default layout for the hits component
+// can be set to 'grid' or 'list'
 Vue.prototype.defaultLayout = 'grid'
 
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app')

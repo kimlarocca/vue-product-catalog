@@ -21,17 +21,11 @@
             let query = params.get("query")
             if (query !== null) {
                 this.keyword = query
-                this.$parent.keyword = this.keyword
             }
         },
         watch: {
             keyword () {
-                // if keyword exists, filter items based on keyword
-                if (this.keyword) {
-                    this.$parent.filteredItems = this.$parent.filteredItems.filter((item) => {
-                        return item.ItemName.toLowerCase().includes(this.keyword.toLowerCase())
-                    })
-                }
+                this.$parent.keyword = this.keyword
             }
         }
     }

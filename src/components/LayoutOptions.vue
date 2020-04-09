@@ -20,7 +20,7 @@
         name: 'LayoutOptions',
         data: function () {
             return {
-                layout: 'grid'
+                layout: this.$parent.layout
             }
         },
         watch: {

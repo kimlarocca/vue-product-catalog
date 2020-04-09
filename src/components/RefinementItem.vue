@@ -15,7 +15,7 @@
                     <label>
                         <input type="checkbox"
                                :value="item.Value"
-                               @change="toggleRefinement(item, paramName, item.Value, $event)">
+                               @change="toggleRefinement(refinementObject, paramName, item.Value, $event)">
                         {{item.Label}} ({{item.Count}})
                     </label>
                 </li>
@@ -39,6 +39,7 @@
             paramName: String,
             value: String,
             values: Array,
+            refinementObject: Object,
             numberVisible: Number,
             isCollapsed: Boolean,
             checkedItems: Array
@@ -61,7 +62,7 @@
                 if (event.target.checked) {
                     this.$parent.addRefinement(paramName, value);
                 } else {
-                    this.$parent.removeRefinement(item);
+                    this.$parent.removeRefinement(paramName, value);
                 }
             },
             showMore () {

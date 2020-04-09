@@ -32,10 +32,7 @@
             size: String,
             unitOfMeasure: String,
             link: String,
-            layout: {
-                type: String,
-                default: 'grid'
-            }
+            layout: String
         },
         computed: {
             hasLink () {
