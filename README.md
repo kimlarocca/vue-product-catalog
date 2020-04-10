@@ -1,11 +1,7 @@
-# hawksearch component library
-
-http://fesandbox.tihuma.net/hawksearch/dist/
+# vue product catalog
 
 * Global variables are defined in src/main.js
 * Uses Vue Carousel: https://ssense.github.io/vue-carousel/
-* Set the public path of the app in vue.config.js
-* Set routes in src/router/index.js
 
 ## Project setup
 ```
