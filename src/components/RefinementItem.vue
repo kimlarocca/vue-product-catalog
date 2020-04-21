@@ -75,7 +75,7 @@
 
 <style lang="scss" scoped>
     .refinement-item-name {
-        font-family: 'FFDINStdBold', serif;
+        font-weight: 700;
         font-size: .75rem;
         color: $link-color;
         cursor: pointer;
@@ -88,7 +88,7 @@
             top: 0;
             bottom: 0;
             right: 0;
-            content: '\f0fe';
+            content: '\f067';
             font-family: $font-awesome;
             font-weight: 900;
             z-index: 10;
@@ -96,7 +96,7 @@
 
         &.open {
             &:after {
-                content: '\f146';
+                content: '\f068';
             }
         }
     }

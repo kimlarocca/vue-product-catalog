@@ -81,7 +81,7 @@
     }
 
     .refine-by {
-        font-family: 'FFDINStdBold', serif;
+        font-weight: 700;
         font-size: .875rem;
         margin-bottom: .25rem;
     }

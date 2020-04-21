@@ -121,7 +121,7 @@
             margin-bottom: 0;
             color: $link-color;
             font-size: .875rem;
-            font-family: 'FFDINStdBold', serif;
+            font-weight: 700;
         }
 
         .itemNumber,
@@ -196,7 +196,7 @@
 
             .cta {
                 display: block;
-                font-family: 'FFDINStdBold', serif;
+                font-weight: 700;
             }
         }
 

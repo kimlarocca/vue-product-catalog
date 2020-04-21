@@ -7,15 +7,14 @@
                 <search/>
             </div>
             <div class="section-padding-40"></div>
-            <hr>
             <div class="row">
                 <div class="col-3 p-4">
                     <refinements/>
                 </div>
-                <div class="col-9 border-left p-4">
+                <div class="col-9 p-4">
                     <div class="row align-middle mb-2">
                         <div class="col-4">
-                            <h3>Products:</h3>
+                            <h3>Hits:</h3>
                         </div>
                         <div class="col-8 text-right">
                             <div class="d-flex justify-content-end">

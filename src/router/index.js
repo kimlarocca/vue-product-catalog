@@ -1,39 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import SearchForm from "../views/SearchForm"
+import ProductCatalog from "../views/ProductCatalog"
 
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
-        name: 'Product Catalog',
-        // route level code-splitting
-        // this generates a separate chunk for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "ProductCatalog" */ '../views/ProductCatalog.vue'),
+        name: 'ProductCatalog',
+        component: ProductCatalog,
         meta: {title: 'Hawksearch / Vue Product Catalog'}
-    },
-    {
-        path: '/search-form',
-        name: 'SearchForm',
-        component: SearchForm
-    },
-    {
-        path: '/intro',
-        name: 'Intro',
-        // route level code-splitting
-        // this generates a separate chunk for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "Intro" */ '../views/Intro.vue')
-    },
-    {
-        path: '/my-product-list',
-        name: 'My Product List',
-        // route level code-splitting
-        // this generates a separate chunk for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "MyProductList" */ '../views/MyProductList.vue')
     }
 ]
 

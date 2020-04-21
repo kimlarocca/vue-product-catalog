@@ -1,14 +1,7 @@
-// took this from https://www.byramhealthcare.com/Styles/dist/main.css
-// testing for style conflicts
-// you should delete these 2 imports for prod!!
-@import "byram";
-@import "MyFontsWebfontsKit";
-//
-//
-//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 // global variables
-
+$font-family: 'Roboto', sans-serif;
 $transition: 500ms all linear;
 $opacity-on-hover: .75;
 $font-color: #2b2c2f;
@@ -16,6 +9,53 @@ $link-color: #001e61;
 $light-gray: #cdcdcd;
 $green: #82bc00;
 $font-awesome: 'Font Awesome 5 Free', sans-serif;
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+html {
+  font-family: $font-family;
+  color: $font-color;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border: 0;
+}
+
+a,
+a:visited,
+a:active {
+  color: $link-color;
+  text-decoration: none;
+  transition: $transition;
+
+  &:hover {
+    color: $font-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.button {
+      text-decoration: none;
+    }
+  }
+}
 
 // vue transitions
 
