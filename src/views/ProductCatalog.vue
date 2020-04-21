@@ -1,11 +1,11 @@
 <template>
     <div class="product-catalog container">
+        <h1 class="text-center">Hawksearch / Vue Product Catalog</h1>
+        <div class="section-padding-40"></div>
         <hawksearch>
             <div class="container-small">
                 <search/>
             </div>
-            <div class="section-padding-60"></div>
-            <categories/>
             <div class="section-padding-40"></div>
             <hr>
             <div class="row">
@@ -13,9 +13,6 @@
                     <refinements/>
                 </div>
                 <div class="col-9 border-left p-4">
-                    <h3>Featured Products:</h3>
-                    <featured/>
-                    <hr class="mt-4">
                     <div class="row align-middle mb-2">
                         <div class="col-4">
                             <h3>Products:</h3>
@@ -31,8 +28,6 @@
                 </div>
             </div>
             <div class="section-padding-60"></div>
-            <hr>
-            <other-items-viewed/>
         </hawksearch>
     </div>
 </template>
@@ -44,16 +39,10 @@
     import LayoutOptions from '@/components/LayoutOptions.vue'
     import Hits from '@/components/Hits.vue'
     import Refinements from '@/components/Refinements.vue'
-    import Featured from "../components/Featured"
-    import OtherItemsViewed from "../components/OtherItemsViewed"
-    import Categories from "../components/Categories"
 
     export default {
         name: 'ProductCatalog',
         components: {
-            Categories,
-            OtherItemsViewed,
-            Featured,
             Hawksearch,
             Search,
             Sort,

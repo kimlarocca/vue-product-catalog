@@ -1,7 +1,7 @@
 <template>
     <div class="hawksearch-search">
         <label for="search" class="hide-a11y-element">Search Input</label>
-        <input id="search" v-model="keyword" ref="search" type="text" placeholder="keyword search"/>
+        <input id="search" v-model="keyword" ref="search" type="text" placeholder="keyword search on the title field"/>
         <i class="fas fa-search"></i>
     </div>
 </template>
