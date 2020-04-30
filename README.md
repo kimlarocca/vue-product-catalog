@@ -3,7 +3,6 @@
 ![vue product catalog screenshot](https://raw.githubusercontent.com/kimlarocca/vue-product-catalog/master/public/screenshot.jpg)
 
 * Global variables are defined in src/main.js
-* Uses Vue Carousel: https://ssense.github.io/vue-carousel/
 
 ## Project setup
 ```

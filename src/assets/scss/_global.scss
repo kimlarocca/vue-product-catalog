@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap');
 
 // global variables
 $font-family: 'Roboto', sans-serif;
-$transition: 500ms all linear;
-$opacity-on-hover: .75;
-$font-color: #2b2c2f;
-$link-color: #001e61;
-$light-gray: #cdcdcd;
-$green: #82bc00;
 $font-awesome: 'Font Awesome 5 Free', sans-serif;
+$transition: 200ms all linear;
+$opacity-on-hover: .75;
+$font-color: rgba(43, 44, 47, 0.8);
+$link-color: #2054ca;
+$light-gray: rgba(241, 242, 255, 0.8);
+$medium-gray: rgba(197, 201, 224, .8);
+$dark-gray: rgba(122, 124, 138);
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -35,10 +36,6 @@ img {
   height: auto;
 }
 
-iframe {
-  border: 0;
-}
-
 a,
 a:visited,
 a:active {
@@ -57,7 +54,7 @@ a:active {
   }
 }
 
-// vue transitions
+// slide down transition
 
 .slide-enter-active {
   -moz-transition-duration: 0.3s;
@@ -102,16 +99,4 @@ a:active {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-// misc
-
-@import "carousel";
-
-.section-padding-60 {
-  margin-bottom: 60px;
-}
-
-.section-padding-40 {
-  margin-bottom: 40px;
 }

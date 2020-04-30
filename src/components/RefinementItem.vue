@@ -14,6 +14,7 @@
                 <li v-for="(item, index) in values.slice(0, numberToShow)" :key="index">
                     <label>
                         <input type="checkbox"
+                               class="refinement-item-checkbox"
                                :value="item.Value"
                                @change="toggleRefinement(refinementObject, paramName, item.Value, $event)">
                         {{item.Label}} ({{item.Count}})
@@ -62,7 +63,7 @@
                 if (event.target.checked) {
                     this.$parent.addRefinement(paramName, value);
                 } else {
-                    this.$parent.removeRefinement(paramName, value);
+                    this.$parent.removeRefinement(value);
                 }
             },
             showMore () {
@@ -74,55 +75,60 @@
 </script>
 
 <style lang="scss" scoped>
-    .refinement-item-name {
-        font-weight: 700;
-        font-size: .75rem;
-        color: $link-color;
-        cursor: pointer;
-        margin-bottom: .5rem;
-        width: 100%;
-        position: relative;
-
-        &:after {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            content: '\f067';
-            font-family: $font-awesome;
-            font-weight: 900;
-            z-index: 10;
-        }
-
-        &.open {
-            &:after {
-                content: '\f068';
-            }
-        }
-    }
-
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-            display: block;
-            font-size: .75rem;
-        }
-    }
-
-    input[type=checkbox] {
-        margin-right: .25rem;
-    }
-
-    .show-more {
-        color: $link-color;
-        cursor: pointer;
+    .refinement-item {
         margin-bottom: 1rem;
 
-        &:hover {
-            color: $font-color;
+        .refinement-item-name {
+            font-size: .75rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $link-color;
+            cursor: pointer;
+            margin-bottom: .5rem;
+            width: 100%;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                content: '\f107';
+                font-family: $font-awesome;
+                font-weight: 900;
+                z-index: 10;
+            }
+
+            &.open {
+                &:after {
+                    content: '\f106';
+                }
+            }
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: block;
+                font-size: .75rem;
+            }
+        }
+
+        input[type=checkbox] {
+            margin-right: .25rem;
+        }
+
+        .show-more {
+            color: $link-color;
+            cursor: pointer;
+            margin-bottom: 1rem;
+
+            &:hover {
+                color: $font-color;
+            }
         }
     }
 </style>

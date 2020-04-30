@@ -1,7 +1,7 @@
 <template>
-    <div class="hawksearch-layout-options">
+    <div class="layout-options">
         <i tabindex="0"
-           class="fas fa-th-large"
+           class="fas fa-th-large mr-2"
            @click="layout = 'grid'"
            @keypress.enter="layout = 'grid'"
            @keypress.space.prevent="layout = 'grid'">
@@ -32,13 +32,12 @@
 </script>
 
 <style lang="scss" scoped>
-    .hawksearch-layout-options {
+    .layout-options {
         height: 2rem;
 
         i {
             cursor: pointer;
             float: left;
-            margin-left: .75rem;
             line-height: 2rem;
             color: $link-color;
             transition: $transition;

@@ -1,0 +1,402 @@
+{
+  "Sorting": {
+    "Items": [
+      {
+        "Label": "Title (A-Z)",
+        "Value": "titleasc",
+        "IsDefault": true
+      },
+      {
+        "Label": "Title (Z-A)",
+        "Value": "titledesc",
+        "IsDefault": false
+      },
+      {
+        "Label": "Price: Lowest to Highest",
+        "Value": "salepriceasc",
+        "IsDefault": false
+      },
+      {
+        "Label": "Price: Highest to Lowest",
+        "Value": "salepricedesc",
+        "IsDefault": false
+      }
+    ]
+  },
+  "Results": [
+    {
+      "Id": "Item_150648",
+      "ItemName": "Rickenbacker 660 Midnight Blue",
+      "ImageURL": "/images/rickenbacker-midnight.jpg",
+      "ImageAlt": "Rickenbacker 660 Midnight Blue",
+      "URL": "",
+      "Brand": "Rickenbacker",
+      "Color": "Blue",
+      "Price": "2255.00",
+      "SalePrice": "1995.00",
+      "IsOnSale": true,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Gibson 1957 Les Paul Custom Reissue",
+      "ImageURL": "/images/gibson-custom.jpg",
+      "ImageAlt": "Gibson 1957 Les Paul Custom Reissue",
+      "URL": "",
+      "Brand": "Gibson",
+      "Color": "Black",
+      "Price": "499.00",
+      "SalePrice": "395.00",
+      "IsOnSale": true,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Heritage Standard H-150",
+      "ImageURL": "/images/heritage-standard.jpg",
+      "ImageAlt": "Heritage Standard H-150",
+      "URL": "",
+      "Brand": "Heritage",
+      "Color": "Black",
+      "Price": "499.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Heritage Standard H-535 Semi-Hollow",
+      "ImageURL": "/images/heritage-hollow.jpg",
+      "ImageAlt": "Heritage Standard H-535",
+      "URL": "",
+      "Brand": "Gibson",
+      "Color": "Red",
+      "Price": "499.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Fender Player Stratocaster",
+      "ImageURL": "/images/fender-strat.jpg",
+      "ImageAlt": "Heritage Standard H-535",
+      "URL": "",
+      "Brand": "Fender",
+      "Color": "Green",
+      "Price": "645.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Fender FSR Player Stratocaster",
+      "ImageURL": "/images/fender-fsr.jpg",
+      "ImageAlt": "Fender FSR Player Stratocaster",
+      "URL": "",
+      "Brand": "Fender",
+      "Color": "Green",
+      "Price": "635.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Fender MIJ Traditional 60x Jazzmaster",
+      "ImageURL": "/images/fender-mij.jpg",
+      "ImageAlt": "Fender MIJ Traditional 60x Jazzmaster",
+      "URL": "",
+      "Brand": "Fender",
+      "Color": "Green",
+      "Price": "1100.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "PRS SE Custom 24 Exotic Top",
+      "ImageURL": "/images/prs.jpg",
+      "ImageAlt": "PRS SE Custom 24 Exotic Top",
+      "URL": "",
+      "Brand": "PRS",
+      "Color": "Brown",
+      "Price": "705.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Rickenbacker 360",
+      "ImageURL": "/images/rickenbacker-360.jpg",
+      "ImageAlt": "Rickenbacker 360",
+      "URL": "",
+      "Brand": "Rickenbacker",
+      "Color": "Brown",
+      "Price": "2195.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Alembic Tribute Cocobolo",
+      "ImageURL": "/images/alembic.jpg",
+      "ImageAlt": "Alembic Tribute Cocobolo",
+      "URL": "",
+      "Brand": "Alembic",
+      "Color": "Brown",
+      "Price": "399.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Gibson Custom 1960 Les Paul Standard",
+      "ImageURL": "/images/gibson-custom2.jpg",
+      "ImageAlt": "Gibson Custom 1960 Les Paul Standard",
+      "URL": "",
+      "Brand": "Gibson",
+      "Color": "Brown",
+      "Price": "6499.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Gibson USA ES-339",
+      "ImageURL": "/images/gibson-usa.jpg",
+      "ImageAlt": "Gibson USA ES-339",
+      "URL": "",
+      "Brand": "Gibson",
+      "Color": "Black",
+      "Price": "1955.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Ibanez EH10 Signature Erick Hansel",
+      "ImageURL": "/images/ibanez-eh10.jpg",
+      "ImageAlt": "Ibanez EH10 Signature Erick Hansel",
+      "URL": "",
+      "Brand": "Ibanez",
+      "Color": "Green",
+      "Price": "1425.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Fender American Elite Stratocaster",
+      "ImageURL": "/images/fender-american.jpg",
+      "ImageAlt": "Fender American Elite Stratocaster",
+      "URL": "",
+      "Brand": "Fender",
+      "Color": "Green",
+      "Price": "1615.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Fender American Pro Jazzmaster",
+      "ImageURL": "/images/fender-american-pro.jpg",
+      "ImageAlt": "Fender American Pro Jazzmaster",
+      "URL": "",
+      "Brand": "Fender",
+      "Color": "Green",
+      "Price": "1470.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "Music Man Stingray Guitar",
+      "ImageURL": "/images/musicman.jpg",
+      "ImageAlt": "Music Man Stingray Guitar",
+      "URL": "",
+      "Brand": "Fender",
+      "Color": "Grey",
+      "Price": "2040.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "PRS Limited Edition McCarty Singlecut",
+      "ImageURL": "/images/prs-limited.jpg",
+      "ImageAlt": "PRS Limited Edition McCarty Singlecut",
+      "URL": "",
+      "Brand": "PRS",
+      "Color": "Brown",
+      "Price": "4400.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    },
+    {
+      "Id": "Item_150648",
+      "ItemName": "PRS S2 Custom 24",
+      "ImageURL": "/images/prs-custom2.jpg",
+      "ImageAlt": "PRS S2 Custom 24",
+      "URL": "",
+      "Brand": "PRS",
+      "Color": "Blue",
+      "Price": "4400.00",
+      "SalePrice": "",
+      "IsOnSale": false,
+      "IsPinned": false,
+      "IsHidden": false
+    }
+  ],
+  "Facets": [
+    {
+      "Name": "Brand",
+      "Type": "string",
+      "ParamName": "Brand",
+      "Values": [
+        {
+          "Label": "Alembic",
+          "Value": "Alembic"
+        },
+        {
+          "Label": "Fender",
+          "Value": "Fender"
+        },
+        {
+          "Label": "Gibson",
+          "Value": "Gibson"
+        },
+        {
+          "Label": "Heritage",
+          "Value": "Heritage"
+        },
+        {
+          "Label": "Ibanez",
+          "Value": "Ibanez"
+        },
+        {
+          "Label": "Music Man",
+          "Value": "Music Man"
+        },
+        {
+          "Label": "PRS",
+          "Value": "PRS"
+        },
+        {
+          "Label": "Rickenbacker",
+          "Value": "Rickenbacker"
+        }
+      ],
+      "IsCollapsedByDefault": false,
+      "IsHidden": false,
+      "NumberVisible": 5
+    },
+    {
+      "Name": "Color",
+      "Type": "string",
+      "ParamName": "Color",
+      "Values": [
+        {
+          "Label": "Black",
+          "Value": "Black"
+        },
+        {
+          "Label": "Blue",
+          "Value": "Blue"
+        },
+        {
+          "Label": "Grey",
+          "Value": "Grey"
+        },
+        {
+          "Label": "Green",
+          "Value": "Green"
+        },
+        {
+          "Label": "Red",
+          "Value": "Red"
+        },
+        {
+          "Label": "White",
+          "Value": "White"
+        },
+        {
+          "Label": "Brown",
+          "Value": "Brown"
+        }
+      ],
+      "IsCollapsedByDefault": false,
+      "IsHidden": false,
+      "NumberVisible": 10
+    },
+    {
+      "Name": "Price",
+      "Type": "numeric",
+      "ParamName": "Price",
+      "Values": [
+        {
+          "Label": "Under $50",
+          "Value": "1"
+        },
+        {
+          "Label": "$51 - $100",
+          "Value": "3"
+        },
+        {
+          "Label": "$101 - $150",
+          "Value": "4"
+        },
+        {
+          "Label": "$151 - $200",
+          "Value": "5"
+        },
+        {
+          "Label": "$201 - $500",
+          "Value": "6"
+        },
+        {
+          "Label": "Over $500",
+          "Value": "7"
+        }
+      ],
+      "IsCollapsedByDefault": false,
+      "IsHidden": false,
+      "NumberVisible": 10
+    },
+    {
+      "Name": "On Sale",
+      "Type": "toggle",
+      "ParamName": "IsOnSale",
+      "IsHidden": false
+    }
+  ]
+}

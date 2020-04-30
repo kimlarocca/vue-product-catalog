@@ -1,6 +1,6 @@
 <template>
-    <div class="hawksearch-sort">
-        <label for="sort" class="sort-by">Sort By:</label>
+    <div class="sort">
+        <label for="sort" class="hide-a11y-element">Sort By:</label>
         <select id="sort" v-model="selected">
             <option v-for="(option, index) in this.$parent.sorting" :key="index" :value="option.Value">
                 {{option.Label}}
@@ -27,27 +27,17 @@
 </script>
 
 <style lang="scss" scoped>
-    .hawksearch-sort {
-        label {
-            line-height: 1rem;
-            color: $link-color;
-            font-size: .875rem;
-            margin: 0 .5rem 0 0;
-        }
-
+    .sort {
         select {
-            float: right;
-            max-width: 100%;
+            width: 100%;
             height: 2rem;
             line-height: 2rem;
-            border: solid 1px $light-gray;
-            border-radius: 2rem;
             padding: .5rem;
-
-            &::placeholder {
-                font-size: .875rem;
-                color: $font-color;
-            }
+            background: $light-gray;
+            border: none;
+            border-radius: .25rem;
+            color: $dark-gray;
+            font-size: .75rem;
         }
     }
 </style>

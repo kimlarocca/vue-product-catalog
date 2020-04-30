@@ -1,7 +1,7 @@
 <template>
-    <div class="hawksearch-search">
-        <label for="search" class="hide-a11y-element">Search Input</label>
-        <input id="search" v-model="keyword" ref="search" type="text" placeholder="keyword search on the title field"/>
+    <div class="search">
+        <label for="search" class="hide-a11y-element">keyword search</label>
+        <input id="search" v-model="keyword" ref="search" type="text" placeholder="search here..."/>
         <i class="fas fa-search"></i>
     </div>
 </template>
@@ -32,28 +32,38 @@
 </script>
 
 <style lang="scss" scoped>
-    .hawksearch-search {
+    .search {
         position: relative;
 
         input {
             width: 100%;
             height: 2rem;
             line-height: 2rem;
-            border: solid 1px $light-gray;
-            border-radius: 2rem;
             padding: .5rem;
             position: relative;
+            background: $light-gray;
+            border: none;
+            border-radius: .25rem;
+            color: $dark-gray;
+            font-size: .75rem;
 
             &::placeholder {
-                font-size: .875rem;
-                color: $font-color;
+                font-size: .75rem;
+                color: $dark-gray;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0px 0px 2px $link-color;
+                border-radius: .25rem;
             }
         }
 
         i {
             position: absolute;
-            top: .375rem;
+            top: .5rem;
             right: .5rem;
+            color: $dark-gray;
         }
     }
 </style>

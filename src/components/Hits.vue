@@ -1,21 +1,21 @@
 <template>
-    <div class="hawksearch-hits">
+    <div class="hits">
+        <p v-if="this.$parent.filteredItems.length === 0">No items found.</p>
         <div class="row">
             <div v-for="(item, index) in this.$parent.filteredItems"
                  :key="index"
                  :class="layout"
-                 class="mb-4 hawksearch-item">
+                 class="mb-4 item">
                 <card
+                        :id="item.Id"
                         :image="item.ImageURL"
-                        :altText="item.ImageAlt"
+                        :imageAlt="item.ImageAlt"
                         :brand="item.Brand"
-                        preTitle="Bard Medical Division"
                         :title="item.ItemName"
-                        :link="item.CustomURL"
-                        itemNumber="CT33120"
-                        size="8 x 8"
-                        unitOfMeasure="Box of 5"
-                        cta="view product information"
+                        :price="item.Price"
+                        :salePrice="item.SalePrice"
+                        :isOnSale="item.IsOnSale"
+                        :url="item.URL"
                         :layout="layoutName"
                 >
                 </card>

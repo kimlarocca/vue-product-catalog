@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import ProductCatalog from "../views/ProductCatalog"
+import Catalog from "../views/Catalog"
 
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
-        name: 'ProductCatalog',
-        component: ProductCatalog,
-        meta: {title: 'Hawksearch / Vue Product Catalog'}
+        name: 'Catalog',
+        component: Catalog,
+        meta: {title: 'Vue Search | Open Source UI Library'}
     }
 ]
 
