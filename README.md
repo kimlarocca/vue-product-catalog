@@ -1,5 +1,7 @@
 # vue product catalog
 
+An open-source UI library for Vue that lets you quickly build an Algolia inspired search interface in your front-end application.
+
 ![vue product catalog screenshot](https://raw.githubusercontent.com/kimlarocca/vue-product-catalog/master/public/screenshot.jpg)
 
 * Global variables are defined in src/main.js
